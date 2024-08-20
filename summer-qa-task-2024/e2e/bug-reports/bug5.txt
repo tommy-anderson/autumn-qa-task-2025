@@ -1,0 +1,38 @@
+Summary: 
+User is not able to edit task importance
+
+Description: 
+When user wants to edit importance and label, the dropdowns do not displayed selected value.
+
+Precondition:
+User is on 'Task Manager' page. A task is already been created with High importance.
+
+Steps to reproduce:
+1. Click yellow [Edit] task button.
+2. Populate 'Task title' input field with: "New Title".
+3. Click on 'Importance' dropdown.
+4. Click on 'Medium' value.
+5. Check that value didn't change to Medium.
+5. Click on blue [Save] button displayed below.
+
+Expected result: 
+- The task importance changes from High to Medium.
+
+Actual result:
+- The task importance does not change. It becomes Low by default.
+
+Severity:
+High
+
+Priority:
+High
+
+Environment:
+Version - First deployment
+Browser - Firefox 127.0
+OS - Ubuntu 22.04
+
+
+Attachments:
+"I send an folder with bug images on planable@pinpoint.email. Check image labeled bug5.png"
+

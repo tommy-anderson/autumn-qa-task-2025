@@ -1,0 +1,33 @@
+Summary: 
+Task Description does not fit task box.
+
+Description: 
+When the user provides a longer description, it does not fits the task box.
+
+Steps to reproduce:
+1. Navigate to 'Task Manager' page.
+2. Populate 'Task title' input field with: "Task 1".
+3. Populate 'Task description' field with: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA".
+4. Click on [Add Task] button.
+
+Expected result: 
+- The task description fits task box.
+
+Actual result:
+- The task description does not fit task box
+
+Severity:
+Low
+
+Priority:
+High
+
+Environment:
+Version - First deployment
+Browser - Firefox 127.0
+OS - Ubuntu 22.04
+
+
+Attachments:
+"I send an folder with bug images on planable@pinpoint.email. Check image labeled bug8.png"
+

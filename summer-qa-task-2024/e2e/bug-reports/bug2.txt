@@ -1,0 +1,32 @@
+Summary: 
+Default task completeness is not as expected
+
+Description: 
+Completeness is set to false by default when task is created.
+
+Steps to reproduce:
+1. Navigate to 'Task Manager' page.
+2. Populate 'Task title' input field with: "Task 1".
+3. Click [Add Task] button.
+
+Expected result: 
+-The task created must have a purple button that spells 'Uncompleted'.
+
+Actual result:
+-The task has a green button that spells 'Completed', which means that task is being completed by default.
+
+Severity:
+Medium
+
+Priority:
+Medium
+
+Environment:
+Version - First deployment
+Browser - Firefox 127.0
+OS - Ubuntu 22.04
+
+
+Attachments:
+"I send an folder with bug images on planable@pinpoint.email. Check image labeled bug2.png"
+

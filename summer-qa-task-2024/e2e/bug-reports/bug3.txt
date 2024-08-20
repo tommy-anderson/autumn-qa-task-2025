@@ -1,0 +1,32 @@
+Summary: 
+The task title does not fit the box
+
+Description: 
+When a longer title is provided, it is displayed outside the task box.
+
+Steps to reproduce:
+1. Navigate to 'Task Manager' page.
+2. Populate 'Task title' input field with: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA".
+3. Click [Add Task] button.
+
+Expected result: 
+- The task title must fit in task box.
+
+Actual result:
+- The task does not fit task box.
+
+Severity:
+Low
+
+Priority:
+High
+
+Environment:
+Version - First deployment
+Browser - Firefox 127.0
+OS - Ubuntu 22.04
+
+
+Attachments:
+"I send an folder with bug images on planable@pinpoint.email. Check image labeled bug3.png"
+

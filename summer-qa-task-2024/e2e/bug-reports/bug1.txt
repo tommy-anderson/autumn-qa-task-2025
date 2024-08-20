@@ -1,0 +1,32 @@
+Summary: 
+Task can be created without providing a title
+
+Description: 
+Task title is a mandatory field, therefore a task without title can not be created.
+
+Steps to reproduce:
+1. Navigate to 'Task Manager' page.
+2. Do not populate any input field.
+3. Click [Add Task] button.
+
+Expected result: 
+-The task is not being created. A red error message is displayed under 'Task Title' input field.
+
+Actual result:
+-The task is created.
+
+Severity:
+Major
+
+Priority:
+High
+
+Environment:
+Version - First deployment
+Browser - Firefox 127.0
+OS - Ubuntu 22.04
+
+
+Attachments:
+"I send an folder with bug images on planable@pinpoint.email. Check image labeled bug1.png"
+

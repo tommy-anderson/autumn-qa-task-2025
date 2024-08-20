@@ -1,0 +1,34 @@
+Summary: 
+The cursor is loading non-stop when [Edit task] button is hovered
+
+Description: 
+When user wants to edit a specific task and hovers over the [Edit task] button, the cursor turns loading.
+
+Steps to reproduce:
+1. Navigate to 'Task Manager' page.
+2. Populate 'Task title' input field with: "Task 1".
+3. Click [Add Task] button.
+4. Check that a new task was just created. A new task box is displayed under 'All' and 'Sort by importance' dropdowns.
+5. Hover over yellow [Edit] task button.
+
+Expected result: 
+- The cursor does not change its appearance.
+
+Actual result:
+- The cursor turns loading.
+
+Severity:
+Low
+
+Priority:
+Low
+
+Environment:
+Version - First deployment
+Browser - Firefox 127.0
+OS - Ubuntu 22.04
+
+
+Attachments:
+"I send an folder with bug images on planable@pinpoint.email. Check image labeled bug4.png"
+

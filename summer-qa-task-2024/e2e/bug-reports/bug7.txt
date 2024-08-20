@@ -1,0 +1,35 @@
+Summary: 
+Sorting Ascending tasks by importance functionality does not work properly 
+
+Description: 
+When user wants to sort tasks by importance, they are not sorted as expected.
+
+Precondition:
+User is on 'Task Manager' page. 3 tasks are already created. The first one has Low importance. The second one has Medium importance. The third one has High importance.
+
+Steps to reproduce:
+1. Navigate to 'Sort by Importance' dropdown.
+2. Click on it.
+3. Select 'Sort by importance (Ascending)' value.
+
+Expected result: 
+- The tasks must be sorted as follows: Low, Medium, High.
+
+Actual result:
+- The tasks are sorted as follows: High, Low, Medium.
+
+Severity:
+Medium
+
+Priority:
+Medium
+
+Environment:
+Version - First deployment
+Browser - Firefox 127.0
+OS - Ubuntu 22.04
+
+
+Attachments:
+"I send an folder with bug images on planable@pinpoint.email. Check image labeled bug7.png"
+
