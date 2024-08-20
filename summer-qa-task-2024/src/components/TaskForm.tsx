@@ -69,7 +69,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ onAddTask }) => {
                     <select
                         value={label}
                         onChange={(e) => setLabel(e.target.value as 'Work' | 'Social' | 'Home' | 'Hobby')}
-                        className="border p-2 rounded-md flex-1 text-center"
+                        className="border1 p-2 rounded-md flex-1 text-center"
                     >
                         <option value="Work">Work</option>
                         <option value="Social">Social</option>

@@ -64,6 +64,7 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, onToggleComplete, onDeleteTa
                                 value={task.importance}
                                 onChange={(e) => setEditImportance(e.target.value as Importance)}
                                 className="block w-full mb-2 p-1 border rounded-md"
+                                data-test-id='importance-selector'
                             >
                                 <option value="Low">Low</option>
                                 <option value="Medium">Medium</option>
@@ -73,6 +74,7 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, onToggleComplete, onDeleteTa
                                 value={task.label}
                                 onChange={(e) => setEditLabel(e.target.value as Label)}
                                 className="block w-full mb-2 p-1 border rounded-md"
+                                data-test-id='label-selector'
                             >
                                 <option value="Work">Work</option>
                                 <option value="Social">Social</option>
