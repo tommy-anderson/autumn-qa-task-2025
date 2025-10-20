@@ -1,4 +1,4 @@
-# Summer 2024 QA Hiring Homework
+# autumn 2025 QA Hiring Homework
 
 The Repo is a sample React application that will be used to assess the candidate's skills in the QA task. The repo is front-end only.
 
