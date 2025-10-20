@@ -52,7 +52,7 @@ You will be evaluated on the quality of the report and the bugs found.
 
 ### Automated Testing
 
-The candidate is expected to write automated tests for the application, by choosing either Cypress or Playwright as the testing framework.
+The candidate is expected to write automated tests for the application, using Playwright as the testing framework.
 Here is what should be covered
 
 - 5 user stories
