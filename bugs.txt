@@ -1,0 +1,90 @@
+Bug elements legend:
+
+Severity:
+A - Critical 
+B - High
+C - Medium
+D - Low
+
+Priority:
+High - Big bussiness impact, users can't access the site, or use the main features.
+Medium - Some feature are has bugs, but there are workarounds, and users can finish the flows.
+Low - low business impact.
+
+-----------------------------------------------------------------------------------------------
+
+1. [A] Multiple tasks are deleted when user tries to delete one task.
+Severity: Critical
+Priority: High
+Environment: Production
+Browsers: Chrome, Safari, Firefox.
+
+Steps to reproduce:
+- Navigate to the main page.
+- Add 6 tasks.
+- Remove one task.
+
+Expected results:
+User can delete one task, and 5 tasks remain
+
+Actual results:
+Multiple tasks are deleted.
+
+-----------------------------------------------------------------------------------------------
+
+2. [C] User can add an empty task.
+Severity: Medium
+Priority: Low
+Environment: Production
+Browsers: Chrome, Safari, Firefox
+
+Steps to reproduce:
+- Navigate to the main page.
+- Click on Add Task button.
+
+Expected results:
+User cannot add an empty task and a error message is displayed.
+
+Actual results:
+User is able to add an empty task.
+
+-----------------------------------------------------------------------------------------------
+
+3. [D] Task title is not auto-capitalizing the first letter.
+Severity: Low
+Priority: Low
+Environment: Production
+Browsers: Chrome, Safari, Firefox
+
+Steps to reproduce:
+- Navigate to the main page.
+- Start to write a title.
+
+Expected results:
+The first letter is auto-capitalized.
+
+Actual results:
+The first letter is not auto-capitalized.
+
+-----------------------------------------------------------------------------------------------
+
+4. Completed tasks remain in the list.
+5. Sorting by ascending/descending is not working correctly.
+6. Typo: “Uncomplete” instead of “Incomplete”.
+7. Task marked as incomplete when edit flow is canceled.
+8. There is no clear filter/sorting button.
+9. Manual task sorting (drag & drop) not supported 
+10. ‘Add Task’ button active with empty title field.
+11. Changes to task importance or label made in edit mode not displayed.
+12. Newly added item is displayed last instead of first.
+13. Unable to select and delete multiple tasks at once.
+14. Placeholder text overlapped by description box when resized.
+15. Description box cannot be resized back to smaller size.
+16. Task title and description not saved after page refresh.
+17. Dropdown menu rendered in incorrect position for mobile layout.
+18. Long task title overflows outside task card.
+19. Long task description overflows outside task card.
+20. Title and description not visible when editing a task.
+21. Placeholder text overlapped by description box in edit mode when resized.
+22. All deleted tasks are displayed after page refresh.
+23. Waiting cursos icon is displayed when hovering Edit button.

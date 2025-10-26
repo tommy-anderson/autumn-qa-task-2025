@@ -40,17 +40,19 @@ const TaskForm: React.FC<TaskFormProps> = ({ onAddTask }) => {
             <div className="grid grid-cols-1 gap-2">
                 <input
                     type="text"
+                    data-testid="title-text"
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                     placeholder="Task Title"
                     className="border p-2 rounded-md w-full"
                 />
                 <textarea
+                    data-testid="description-box"
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
                     placeholder="Task Description"
                     className="border p-2 rounded-md w-full"
-                    rows={3}
+                    rows={3}            
                 />
                 <div className="flex gap-2 text-center">
                     <div className='flex-1'> Select Importance </div>
@@ -58,6 +60,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ onAddTask }) => {
                 </div>
                 <div className="flex gap-2">
                     <select
+                        data-testid="importance-dropdown"
                         value={importance}
                         onChange={(e) => setImportance(e.target.value as 'Low' | 'Medium' | 'High')}
                         className="border p-2 rounded-md flex-1 text-center"
@@ -70,6 +73,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ onAddTask }) => {
                         value={label}
                         onChange={(e) => setLabel(e.target.value as 'Work' | 'Social' | 'Home' | 'Hobby')}
                         className="border p-2 rounded-md flex-1 text-center"
+                        data-testid="label-dropdown"
                     >
                         <option value="Work">Work</option>
                         <option value="Social">Social</option>
@@ -80,6 +84,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ onAddTask }) => {
                 <div className="flex justify-center mt-4">
                     <button
                         type="submit"
+                        data-testid="add-task"
                         // disable cursor pointer when title is empty
                         className={`p-2 bg-blue-500 hover:bg-blue-600 text-white rounded-md ${!title && 'cursor-not-allowed'}`}
                     >

@@ -44,6 +44,7 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, onToggleComplete, onDeleteTa
                     key={task.id}
                     className={`task-item max-w-custom w-full p-4 border rounded-md bg-white shadow-md ${task.completed ? 'bg-green-200' : 'bg-gray-200'}`}
                     style={{ maxWidth: '250px' }}
+                    data-testid="task-card"
                 >
                     {isEditing === task.id ? (
                         <div>
@@ -53,17 +54,20 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, onToggleComplete, onDeleteTa
                                 onChange={(e) => setEditTitle(e.target.value)}
                                 className="block w-full mb-2 p-1 border rounded-md"
                                 placeholder="Title"
+                                data-testid="task-card-title"
                             />
                             <textarea
                                 value={editDescription}
                                 onChange={(e) => setEditDescription(e.target.value)}
                                 className="block w-full mb-2 p-1 border rounded-md"
                                 placeholder="Description"
+                                data-testid="task-card-description"
                             />
                             <select
                                 value={task.importance}
                                 onChange={(e) => setEditImportance(e.target.value as Importance)}
                                 className="block w-full mb-2 p-1 border rounded-md"
+                                data-testid="task-card-importance-dropdown"
                             >
                                 <option value="Low">Low</option>
                                 <option value="Medium">Medium</option>
@@ -73,6 +77,7 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, onToggleComplete, onDeleteTa
                                 value={task.label}
                                 onChange={(e) => setEditLabel(e.target.value as Label)}
                                 className="block w-full mb-2 p-1 border rounded-md"
+                                data-testid="task-card-label-dropdown"
                             >
                                 <option value="Work">Work</option>
                                 <option value="Social">Social</option>
@@ -80,12 +85,14 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, onToggleComplete, onDeleteTa
                                 <option value="Hobby">Hobby</option>
                             </select>
                             <button
+                                data-testid="save-button"
                                 onClick={() => handleSaveEdit(task.id)}
                                 className="py-1 px-2 bg-blue-500 text-white rounded-md"
                             >
                                 Save
                             </button>
                             <button
+                                data-testid="cancel-button"
                                 onClick={() => {
                                     setIsEditing(null)
                                     if (!task.completed) {
@@ -99,24 +106,33 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, onToggleComplete, onDeleteTa
                         </div>
                     ) : (
                         <div>
-                            <h3 className="text-lg font-semibold">{task.title}</h3>
-                            <p className="text-sm">{task.description}</p>
-                            <p className="text-xs text-gray-500">Importance: {task.importance}</p>
-                            <p className="text-xs text-gray-500">Label: {task.label}</p>
+                            <h3 data-testid="taskCardTitle" className="text-lg font-semibold">{task.title}</h3>
+                            <p data-testid="taskCardDescription" className="text-sm">{task.description}</p>
+                            <p className="text-xs text-gray-500"
+                               data-testid="task-card-importance"
+                                >Importance: {task.importance}
+                            </p>
+                            <p className="text-xs text-gray-500"
+                               data-testid="task-card-label"
+                                >Label: {task.label}
+                            </p>
                             <div className="mt-2 flex gap-2">
                                 <button
+                                    data-testid="complete-button"
                                     onClick={() => onToggleComplete(task.id)}
                                     className={`py-1 px-2 text-xs rounded-md text-white ${task.completed ? 'bg-fuchsia-500' : 'bg-green-500 hover:bg-green-600'}`}
                                 >
                                     {task.completed ? 'Uncomplete' : 'Complete'}
                                 </button>
                                 <button
+                                    data-testid="delete-button"
                                     onClick={() => onDeleteTask(task.title)}
                                     className="py-1 px-2 text-xs bg-red-500 hover:bg-red-600 text-white rounded-md"
                                 >
                                     Delete
                                 </button>
                                 <button
+                                    data-testid="edit-button"
                                     onClick={() => handleEdit(task)}
                                     className="py-1 px-2 text-xs bg-yellow-500 hover:bg-yellow-600 text-white rounded-md cursor-wait"
                                 >

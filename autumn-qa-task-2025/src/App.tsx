@@ -64,14 +64,14 @@ const App: React.FC = () => {
       <TaskForm onAddTask={handleAddTask} />
 
       <div className="filter-sort mb-4 flex justify-center">
-        <select onChange={(e) => setFilter(e.target.value)} value={filter} className="p-2 border rounded-md">
+        <select onChange={(e) => setFilter(e.target.value)} value={filter} className="p-2 border rounded-md" data-testid="filter-dropdown">
           <option value="All">All</option>
           <option value="Work">Work</option>
           <option value="Social">Social</option>
           <option value="Home">Home</option>
           <option value="Hobby">Hobby</option>
         </select>
-        <select onChange={(e) => setSortOrder(e.target.value)} value={sortOrder} className="p-2 border rounded-md ml-4">
+        <select onChange={(e) => setSortOrder(e.target.value)} value={sortOrder} className="p-2 border rounded-md ml-4" data-testid="sorting-dropdown">
           <option value="asc">Sort by Importance (Ascending)</option>
           <option value="desc">Sort by Importance (Descending)</option>
         </select>
