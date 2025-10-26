@@ -7,7 +7,17 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "cd tests && npm test",
+    "test:headed": "cd tests && npm run test:headed",
+    "test:ui": "cd tests && npm run test:ui",
+    "test:debug": "cd tests && npm run test:debug",
+    "test:report": "cd tests && npm run test:report",
+    "test:user-stories": "cd tests && npm run test:user-stories",
+    "test:regression": "cd tests && npm run test:regression",
+    "test:combinations": "cd tests && npm run test:combinations",
+    "test:smoke": "cd tests && npm run test:smoke",
+    "test:critical": "cd tests && npm run test:regression"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -20,7 +30,7 @@
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.8.0",
-    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
     "postcss": "^8.4.41",
